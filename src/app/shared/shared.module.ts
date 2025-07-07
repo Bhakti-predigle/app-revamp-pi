@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // Example shared components, directives, and pipes
+import { WorkflowBuilderComponent } from "@predigle/micro/pi-flow";
+import { TopNavbarComponent } from "@predigle/micro/component-ui";
 
 
 // Angular Material example (optional)
@@ -17,12 +19,16 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
+    WorkflowBuilderComponent,
+    TopNavbarComponent,
     // MatButtonModule,
     // MatIconModule,
   ],
   exports: [
     CommonModule,
     FormsModule,
+    WorkflowBuilderComponent,
+    TopNavbarComponent,
     // ReactiveFormsModule,
     // MatButtonModule,
     // MatIconModule,

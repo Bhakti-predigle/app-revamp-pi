@@ -20,7 +20,7 @@
     "@angular/platform-browser": "^17.3.0",
     "@angular/platform-browser-dynamic": "^17.3.0",
     "@angular/router": "^17.3.0",
-    "@predigle/micro": "^1.0.3-dev.20250702121452",
+    "@predigle/micro": "^1.0.3-dev.20250707072010",
     "drawflow": "^0.0.60",
     "html2canvas": "^1.4.1",
     "ngx-image-cropper": "^9.1.5",

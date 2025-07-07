@@ -1,3 +1,42 @@
-<p>
-  canva-main works!
-</p>
+<lib-workflow-builder
+  [nodeTypes]="nodeTypes"
+  [nodes]="nodes"
+  (nodeSelected)="onNodeSelected($event)"
+  (nodeConfigChange)="onNodeConfigChange($event)"
+>
+  <ng-container piFlowTopNavbar>
+    <!-- Add your custom Top navigation bar -->
+    <lib-top-navbar>
+      <img
+        navLogo
+        src="https://storybook.predigle.com/assets/logo.svg"
+        style="width: 5rem; height: 1.0936rem"
+        alt="Logo"
+      />
+
+      <ng-container navLeftItem> </ng-container>
+
+      <ng-container navRightItem> </ng-container>
+
+      <ng-container ProfileSection>
+        <img
+          src="https://storybook.predigle.com/assets/profile-picture.png"
+          style="width: 1.6rem; height: 1.6rem"
+          alt="profile-picture"
+        />
+        <img
+          src="https://storybook.predigle.com/assets/arrow-down-light.svg"
+          style="width: 1.2rem; height: 1.2rem"
+          alt="open profile card"
+        />
+      </ng-container>
+    </lib-top-navbar>
+  </ng-container>
+
+  <ng-container *ngIf="selectedNode" sidePanelConfig>
+    <!-- Add your node's configuration components here -->
+    <div class="flex-center" style="height: 45vh;">
+      <p>Your custom Configuration pages appear here.</p>
+    </div>
+  </ng-container>
+</lib-workflow-builder>
